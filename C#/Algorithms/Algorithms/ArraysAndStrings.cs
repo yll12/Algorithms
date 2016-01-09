@@ -50,5 +50,37 @@ namespace Algorithms
             }
             return true;
         }
+
+        public static void URLify(char[] x, int length)
+        {
+            int spaceCount = 0;
+            for (int i = 0; i < length; i++)
+            {
+                if (x[i] == ' ')
+                {
+                    spaceCount += 1;
+                }
+            }
+
+            int newLength = length + spaceCount * 2;
+
+            for (int j = length - 1; j >= 0; j--) 
+            {
+                if (x[j] == ' ')
+                {
+                    x[newLength - 1] = '0';
+                    x[newLength - 2] = '2';
+                    x[newLength - 3] = '%';
+                    newLength -= 3;
+                }
+                else
+                {
+                    x[newLength - 1] = x[j];
+                    newLength -= 1;
+                }
+
+            }
+
+        }
     }
 }

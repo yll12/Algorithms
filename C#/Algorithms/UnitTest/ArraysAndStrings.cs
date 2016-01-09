@@ -93,5 +93,27 @@ namespace UnitTest
 
             Assert.IsTrue(actual);
         }
+
+        [TestMethod]
+        public void URLify1()
+        {
+            string x = "Mr John Smith    ";
+            char[] y = x.ToCharArray();
+            Algorithms.ArraysAndStrings.URLify(y, 13);
+            string expected = "Mr%20John%20Smith";
+            string actual = new string(y);
+            Assert.AreEqual(actual, expected);
+        }
+
+        [TestMethod]
+        public void URLify2()
+        {
+            string x = "Mr";
+            char[] y = x.ToCharArray();
+            Algorithms.ArraysAndStrings.URLify(y, 2);
+            string expected = "Mr";
+            string actual = new string(y);
+            Assert.AreEqual(actual, expected);
+        }
     }
 }

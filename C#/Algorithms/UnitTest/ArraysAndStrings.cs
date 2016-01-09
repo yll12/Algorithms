@@ -49,5 +49,49 @@ namespace UnitTest
 
             Assert.IsTrue(actual);
         }
+
+        [TestMethod]
+        public void isPermutation1()
+        {
+            string x = "ab1406";
+            string y = "0ba146";
+
+            bool actual = Algorithms.ArraysAndStrings.isPermutation(x, y);
+
+            Assert.IsTrue(actual);
+        }
+
+        [TestMethod]
+        public void isPermutation2()
+        {
+            string x = "ab1406";
+            string y = "ab1455";
+
+            bool actual = Algorithms.ArraysAndStrings.isPermutation(x, y);
+
+            Assert.IsFalse(actual);
+        }
+
+        [TestMethod]
+        public void isPermutation3()
+        {
+            string x = "";
+            string y = "";
+
+            bool actual = Algorithms.ArraysAndStrings.isPermutation(x, y);
+
+            Assert.IsTrue(actual);
+        }
+
+        [TestMethod]
+        public void isPermutation4()
+        {
+            string x = " ";
+            string y = " ";
+
+            bool actual = Algorithms.ArraysAndStrings.isPermutation(x, y);
+
+            Assert.IsTrue(actual);
+        }
     }
 }

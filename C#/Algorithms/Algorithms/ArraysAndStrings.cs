@@ -26,6 +26,29 @@ namespace Algorithms
             return true;
         }
 
+        public static bool isPermutation(string x, string y)
+        {
+            int x_length = x.Length;
+            int y_length = y.Length;
+            if (x_length != y_length)
+            {
+                return false;
+            }
+            int[] letters = new int[128];
+            foreach (char i in x)
+            {
+                letters[i]++;
+            }
 
+            for (int i = 0; i < y_length; i++)
+            {
+                letters[y[i]]--;
+                if (letters[y[i]] < 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }

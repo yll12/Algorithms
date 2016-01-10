@@ -1,13 +1,14 @@
 package trial;
 
+import java.util.Scanner;
+
 public class Main {
 
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
-        System.out.println("1 + 1 = " + Add.add(1, 1));
-        
+        Scanner in = new Scanner(System.in);
+        int _count;
+        _count = Integer.parseInt(in.nextLine());
+        ProgrammingChallenge.OutputCommonManager(_count, in);
     }
 
 }

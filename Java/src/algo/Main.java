@@ -1,4 +1,4 @@
-package trial;
+package algo;
 
 import java.util.Scanner;
 

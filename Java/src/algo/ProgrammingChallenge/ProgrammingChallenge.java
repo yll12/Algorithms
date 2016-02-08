@@ -1,4 +1,4 @@
-package algo;
+package algo.ProgrammingChallenge;
 
 import java.util.Collections;
 import java.util.Hashtable;

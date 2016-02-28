@@ -1,4 +1,4 @@
-package algo.Chapter1;
+package algo.chapter1;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
-import algo.Chapter1.ArraysAndStrings;
+import algo.chapter1.ArraysAndStrings;
 
 public class ArraysAndStringsTest {
 

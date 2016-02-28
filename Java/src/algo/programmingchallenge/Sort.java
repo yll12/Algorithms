@@ -1,4 +1,4 @@
-package algo.ProgrammingChallenge;
+package algo.programmingchallenge;
 
 public interface Sort {
 

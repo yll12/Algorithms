@@ -1,4 +1,4 @@
-package algo.ProgrammingChallenge;
+package algo.programmingchallenge;
 
 import static algo.javaPractise.MergeSort.mergeSort;
 import static algo.javaPractise.QuickSort.quickSort;
@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import algo.javaPractise.InsertionSort;
+import algo.programmingchallenge.Sort;
 
 public class SortTest {
 

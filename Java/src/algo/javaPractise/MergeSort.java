@@ -1,6 +1,6 @@
 package algo.javaPractise;
 
-import algo.ProgrammingChallenge.Sort;
+import algo.programmingchallenge.Sort;
 
 public class MergeSort implements Sort {
 

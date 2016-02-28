@@ -2,7 +2,7 @@ package algo.javaPractise;
 
 import java.util.Random;
 
-import algo.ProgrammingChallenge.Sort;
+import algo.programmingchallenge.Sort;
 
 public class QuickSort implements Sort {
 

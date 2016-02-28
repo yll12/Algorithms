@@ -1,4 +1,4 @@
-package algo.Chapter1;
+package algo.chapter1;
 
 public class ArraysAndStrings {
 

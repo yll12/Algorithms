@@ -1,4 +1,4 @@
-package algo.Chapter2;
+package algo.chapter2;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,8 +7,8 @@ import java.util.LinkedList;
 
 import org.junit.Test;
 
-import algo.Chapter2.LinkedListNode;
-import algo.Chapter2.LinkedLists;
+import algo.chapter2.LinkedListNode;
+import algo.chapter2.LinkedLists;
 
 public class LinkedListTests {
 

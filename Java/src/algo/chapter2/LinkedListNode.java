@@ -1,4 +1,4 @@
-package algo.Chapter2;
+package algo.chapter2;
 
 class LinkedListNode {
         LinkedListNode next = null;

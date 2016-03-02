@@ -1,13 +1,14 @@
-package algo.programmingchallenge;
+package algo.javapractise;
 
-import static algo.javaPractise.MergeSort.mergeSort;
-import static algo.javaPractise.QuickSort.quickSort;
+import static algo.javapractise.MergeSort.mergeSort;
+import static algo.javapractise.QuickSort.quickSort;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import algo.javaPractise.InsertionSort;
-import algo.programmingchallenge.Sort;
+import algo.javapractise.InsertionSort;
+import algo.javapractise.MergeSortDynamic;
+import algo.javapractise.Sort;
 
 public class SortTest {
 
@@ -111,5 +112,58 @@ public class SortTest {
         Assert.assertArrayEquals(expecteds, actuals);
     }
 
+    @Test
+    public void mergeSortDynamicTest1() {
+        int[] actuals = {3, 7, 8, 5, 2, 1, 9, 5, 4};
+        Sort sorter = new MergeSortDynamic();
+        sorter.sort(actuals);
+        int[] expecteds = {1, 2, 3, 4, 5, 5, 7, 8, 9};
+        Assert.assertArrayEquals(expecteds, actuals);
+    }
     
+    @Test
+    public void mergeSortDynamicTest5() {
+        int[] actuals = {3, 7, 8, 5, 2, 1, 5, 4};
+        Sort sorter = new MergeSortDynamic();
+        sorter.sort(actuals);
+        int[] expecteds = {1, 2, 3, 4, 5, 5, 7, 8};
+        Assert.assertArrayEquals(expecteds, actuals);
+    }
+    
+    @Test
+    public void mergeSortDynamicTest6() {
+        int[] actuals = {8, 7, 6, 5, 4, 3, 2, 1};
+        Sort sorter = new MergeSortDynamic();
+        sorter.sort(actuals);
+        int[] expecteds = {1, 2, 3, 4, 5, 6, 7, 8};
+        Assert.assertArrayEquals(expecteds, actuals);
+    }
+    
+    @Test
+    public void mergeSortDynamicTest2() {
+        int[] actuals = {5};
+        Sort sorter = new MergeSortDynamic();
+        sorter.sort(actuals);
+        int[] expecteds = {5};
+        Assert.assertArrayEquals(expecteds, actuals);
+    }
+    
+    @Test
+    public void mergeSortDynamicTest3() {
+        int[] actuals = {};
+        Sort sorter = new MergeSortDynamic();
+        sorter.sort(actuals);
+        int[] expecteds = {};
+        Assert.assertArrayEquals(expecteds, actuals);
+    }
+    
+    @Test
+    public void mergeSortDynamicTest4() {
+        int[] actuals = {5, 4};
+        Sort sorter = new MergeSortDynamic();
+        sorter.sort(actuals);
+        int[] expecteds = {4, 5};
+        Assert.assertArrayEquals(expecteds, actuals);
+    }
+
 }

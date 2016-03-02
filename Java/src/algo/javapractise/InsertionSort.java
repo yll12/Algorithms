@@ -1,6 +1,5 @@
-package algo.javaPractise;
+package algo.javapractise;
 
-import algo.programmingchallenge.Sort;
 
 public class InsertionSort implements Sort {
 

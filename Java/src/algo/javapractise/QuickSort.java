@@ -1,8 +1,7 @@
-package algo.javaPractise;
+package algo.javapractise;
 
 import java.util.Random;
 
-import algo.programmingchallenge.Sort;
 
 public class QuickSort implements Sort {
 

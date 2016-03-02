@@ -1,4 +1,4 @@
-package algo.javaPractise;
+package algo.javapractise;
 
 import java.util.Scanner;
 

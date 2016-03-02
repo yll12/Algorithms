@@ -1,4 +1,4 @@
-package algo.programmingchallenge;
+package algo.javapractise;
 
 public interface Sort {
 

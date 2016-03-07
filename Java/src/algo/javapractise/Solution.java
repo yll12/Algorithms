@@ -9,13 +9,30 @@ public class Solution {
     
     public static void main(String[] args) {
       long x = 12;
+      long n = 2147673649L;
+      int[] result = new int[10];
+      for (int i = 9; i >= 0; i--) {
+          result[i] = (int) (n % 10);
+          n /= 10;
+      }
+      System.out.println(Arrays.toString(result));
+      String l = "0";
+      String r = "0";
+      for (int i = 0; i < 5; i++) {
+          r += result[i];
+      }
+      for (int i = 5; i < 5; i++) {
+          l += result[i];
+      }
+      System.out.println(r);
+      System.out.println(l);
       for (long a = 1; a <= Math.sqrt(x); a++) {
           long b = x / a; 
           if (b * a == x) {
-              long result = concat(concat(a, b), x);
+             /* long result = concat(concat(a, b), x);
               if (isPanDigital(result)) {
                   System.out.println(result);
-              }
+              }*/
           }
       }
     }

@@ -3,7 +3,7 @@ Created on Jan 6, 2016
 
 @author: Acer
 '''
-
+import math
 class Seq(object):
 
     def __init__(self):
@@ -18,23 +18,21 @@ class Seq(object):
     def find_pair(self, z):
         if (z <= 0):
             raise Exception('z must be positive integer')
-        n = 0
-        done = False
-        while (not done):
-            T_n = self.T(n)
-            if (T_n < z <= (T_n + n + 1)):
-                done = True
-            else:
-                n += 1
-        y = z - self.T(n)
-        x = n - y + 2
-        return (x, y)
+        w = math.floor((3 + math.sqrt(8 * (z-1) + 1)) / 2.0);
+        t = (w - 2) * (w - 1) / 2;
+        y = z - t
+        x = w - y
+        n = y + x - 2
+        return (x, y, n)
         
     def L(self, z):
         return self.find_pair(z)[0]
     
     def R(self, z):
         return self.find_pair(z)[1]
+    
+    def findN(self, z):
+        return self.find_pair(z)[2]
     
     def S(self, i, u):
         return self.L(u) % (1 + i * self.R(u))

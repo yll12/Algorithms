@@ -11,8 +11,20 @@ public class PairingFunction {
             compute(z);
             System.out.printf("%d\t(%d,%d)\t%d\n", z, pair.x, pair.y, n);
         }
+        int z = computeZ(240, 5868);
+        compute(z);
+        System.out.println("3z is " + 3 * z);
+        System.out.printf("Check correct z: (%d, %d)\n", pair.x, pair.y);
     }
 
+    public static int computeZ(int x, int y) {
+        return T(x + y - 2) + y;
+    }
+    
+    public static int T(int n) {
+        return (n * (n+1)) / 2;
+    }
+    
     public static void compute(int z) {
         int w = (int) (Math.floor((3 + Math.sqrt(8 * (z-1) + 1)) / 2.0));
         int t = (w - 2) * (w - 1) / 2;
